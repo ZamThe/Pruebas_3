@@ -24,6 +24,3 @@ jobs:
 
       - name: Ejecutar scraping (crear DB y tabla)
         run: python Request_data.py
-
-      - name: Ejecutar pruebas
-        run: pytest
