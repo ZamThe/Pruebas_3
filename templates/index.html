@@ -7,11 +7,10 @@
 <body>
     <h1>Productos extraídos</h1>
     <ul>
-        {% for nombre, precio, link in productos %}
-            <li>
-                <a href="{{ link }}" target="_blank">{{ nombre }}</a> - Precio: {{ precio }}
-            </li>
-        {% endfor %}
+      {% for nombre, precio, link in productos %}
+   <li><a href="{{ link }}">{{ nombre }}</a> - Precio: {{ precio }}</li>
+{% endfor %}
+
     </ul>
 </body>
 </html>
