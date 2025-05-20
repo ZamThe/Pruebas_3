@@ -4,7 +4,6 @@ import os
 
 app = Flask(__name__)
 
-# Ejecutar Request_data.py si no existe la base o la tabla
 def inicializar_bd():
     if not os.path.exists("mercadolibre.db"):
         os.system("python Request_data.py")
@@ -34,4 +33,6 @@ def index():
     return render_template("index.html", productos=productos)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
