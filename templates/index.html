@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos MercadoLibre</title>
+</head>
+<body>
+    <h1>Productos extraídos</h1>
+    <ul>
+        {% for nombre, precio, link in productos %}
+            <li>
+                <a href="{{ link }}" target="_blank">{{ nombre }}</a> - Precio: {{ precio }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
