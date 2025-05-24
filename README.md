@@ -1,23 +1,68 @@
-CONFIGURACIÓN PIPELINE DE CI/CD CON GITHUB ACTIONS
-Una vez que el proyecto esté listo para integrarse con GitHub Actions, debemos crear un archivo de configuración llamado workflow. Este archivo se denominará ci-cd.yml.
+## ⚙️ Configuración Pipeline de CI/CD con GitHub Actions
 
-CREACIÓN DE REPOSITORIO
-Para este punto, utilizaremos las plataformas Git y GitHub, específicamente GitHub Desktop, que nos facilitará el control de versiones y nos permitirá subir los archivos del proyecto al repositorio de manera sencilla.
-Paso a paso:
-Paso1: Dentro de GitHub Desktop, debemos ir a la esquina superior izquierda y buscar la sección de Files o Archivos, luego seleccionar la opción New Repository para crear un nuevo repositorio.
-Paso2: Debemos ingresar el nombre del repositorio, así como una breve descripción que lo explique, luego de ingresar los datos damos clic en crear repositorios.
-Paso3: Una vez creado el repositorio debemos ir a la carpeta que se creo del mismo, en este caso se creó en la capeta documentos, para subir los archivos al repositorio debemos arrastrar los archivos del código fuente al repositorio.
-Paso4: Una vez subidos los archivos a el repositorio, debemos seleccionar la rama a la cual deseamos subir los archivos, realizar un comid y por último enviar la orden de push para que los archivos sean subidos al repositorio.
-Paso5: Para subir los cambios a los repositorios debemos dar clic en el push , se abrirá una nueva ventana donde podremos configurar las opciones del repositorio, como decidir si será público o privado, además de contar con el botón para publicar el repositorio.
-Paso6: Una vez subido los cambios a el repositorio podremos acceder a el mismos desde la plataforma de GitHub
+Una vez que el proyecto esté listo para integrarse con **GitHub Actions**, debemos crear un archivo de configuración llamado workflow. Este archivo se denominará: `.github/workflows/ci-cd.yml`.
+
+---
+
+## 📁 Creación de Repositorio
+
+Para este proceso, utilizaremos las plataformas **Git** y **GitHub**, específicamente **GitHub Desktop**, que nos facilita el control de versiones y permite subir archivos al repositorio fácilmente.
+
+### 🪜 Paso a paso:
+
+#### 📌 Paso 1:
+Dentro de **GitHub Desktop**, ve a la esquina superior izquierda, busca la sección de `Files` o `Archivos`, y selecciona **"New Repository"** para crear un nuevo repositorio.
+
+#### 📌 Paso 2:
+Ingresa el nombre del repositorio y una breve descripción. Luego, haz clic en **"Create Repository"**.
+
+#### 📌 Paso 3:
+Una vez creado el repositorio, accede a la carpeta generada (por defecto en "Documentos"). Para subir los archivos del proyecto, arrastra el código fuente dentro de esta carpeta del repositorio.
+
+#### 📌 Paso 4:
+Con los archivos cargados, selecciona la **rama (branch)** a la que deseas subir los cambios. Luego, realiza un **commit** y ejecuta el **push** para subir los archivos al repositorio remoto.
+
+#### 📌 Paso 5:
+Al hacer push, se abrirá una ventana donde podrás configurar opciones del repositorio, como su visibilidad (público o privado). Finalmente, haz clic en **"Publish Repository"**.
+
+#### 📌 Paso 6:
+Una vez subidos los cambios, podrás acceder al repositorio directamente desde la plataforma web de **GitHub**.
+
+---
+
+💡 **Recuerda:** Una vez tengas el archivo `ci-cd.yml` en la ruta `.github/workflows/`, GitHub Actions comenzará a ejecutar automáticamente los workflows definidos según los eventos configurados (como push o pull request).
 
 
-DESPLIEGUE EN RAILWAY 
-Utilizando Railway, podremos realizar esta acción de forma sencilla, sin complicaciones ni configuraciones innecesarias.
-Paso1: Ingresar a la pagina de rayway, es importante registrarnos previamente o vincular una cuenta de correo para poder utilizar las opciones gratuitas y básicas del despliegue.
-Paso2: Una vez creada la cuenta, se abrirá un espacio de trabajo desde donde podremos comenzar a preparar y ejecutar el despliegue, debemos dar clic en ‘Add a service’ para poder vincular nuestro repositorio git.
-Paso3: Se abrirá un menú que nos dará diversas opciones a escoger, en este caso se utilizará la opción de GitHub Repo
-Paso4: Al enlazar mi cuenta de GitHub con la aplicación de Railway, tendrás acceso a todos los repositorios que hayas subido previamente, seleccionare el repositorio Pruebas_3, ya que este contiene las configuraciones necesarias para desplegar el aplicativo.
-Paso5: Una vez seleccionado el repositorio del aplicativo, el despliegue se iniciará de forma automática.
-Paso6: Debemos generar el dominio para acceder al aplicativo. Para ello, vamos a Configuraciones y seleccionamos la opción Generar dominio personalizado.
-Paso 7: Una vez generado el dominio, podremos acceder al aplicativo y visualizar el contenido extraído.
+## 🚀 Despliegue en Railway
+
+Utilizando **[Railway](https://railway.app/)**, podremos realizar el despliegue de forma sencilla, sin complicaciones ni configuraciones innecesarias.
+
+---
+
+### 🪜 Paso a paso:
+
+#### 📌 Paso 1:
+Ingresa a la página de [Railway](https://railway.app/). Es importante **registrarte** previamente o **vincular una cuenta de correo** para acceder a las opciones gratuitas y básicas del despliegue.
+
+#### 📌 Paso 2:
+Una vez creada la cuenta, se abrirá un **espacio de trabajo** desde donde podrás comenzar a preparar y ejecutar el despliegue. Haz clic en **"Add a service"** para vincular tu repositorio de GitHub.
+
+#### 📌 Paso 3:
+Se abrirá un menú con diversas opciones. Selecciona **"GitHub Repo"** para continuar.
+
+#### 📌 Paso 4:
+Al enlazar tu cuenta de GitHub con Railway, tendrás acceso a todos tus repositorios. Selecciona el repositorio **`Pruebas_3`**, que contiene las configuraciones necesarias para desplegar el aplicativo.
+
+#### 📌 Paso 5:
+Una vez seleccionado el repositorio, **el despliegue se iniciará automáticamente**.
+
+#### 📌 Paso 6:
+Para acceder al aplicativo desplegado, es necesario **generar un dominio**. Dirígete a **"Settings"** y selecciona la opción **"Generate Custom Domain"**.
+
+#### 📌 Paso 7:
+Una vez generado el dominio, podrás acceder al aplicativo y **visualizar el contenido en línea** desde cualquier navegador.
+
+---
+
+✅ ¡Y listo! Tu aplicación está en la nube con Railway.
+
