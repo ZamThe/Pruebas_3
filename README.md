@@ -1,6 +1,22 @@
-## ⚙️ Configuración Pipeline de CI/CD con GitHub Actions
+# 🚀 Automatización CI/CD con GitHub Actions y Railway
 
-Una vez que el proyecto esté listo para integrarse con **GitHub Actions**, debemos crear un archivo de configuración llamado workflow. Este archivo se denominará: `.github/workflows/ci-cd.yml`.
+## 🧩 Introducción
+
+En el desarrollo de software moderno, la integración continua (CI) y el despliegue continuo (CD) son prácticas fundamentales para garantizar la calidad, eficiencia y automatización de los procesos. Estas metodologías permiten que el código fuente pase por un ciclo de pruebas, validación y despliegue sin intervención manual, lo que reduce errores, mejora la colaboración entre equipos y acelera el tiempo de entrega.
+
+Este documento describe paso a paso cómo configurar un pipeline de CI/CD utilizando **GitHub Actions**, una potente herramienta integrada en GitHub que permite ejecutar flujos de trabajo automatizados en función de eventos específicos dentro del repositorio. Además, se muestra cómo realizar el despliegue del proyecto en **Railway**, una plataforma moderna y accesible para la publicación de aplicaciones web.
+
+---
+
+## ⚙️ ¿Qué es GitHub Actions?
+
+**GitHub Actions** es una funcionalidad de GitHub que permite automatizar tareas dentro del ciclo de vida del desarrollo de software. Puedes compilar, probar, y desplegar código directamente desde tu repositorio. Los flujos de trabajo (workflows) se definen mediante archivos `.yml` ubicados en la carpeta `.github/workflows/`.
+
+---
+
+## ☁️ ¿Qué es Railway?
+
+**Railway** es una plataforma como servicio (PaaS) que permite desplegar aplicaciones web de manera sencilla, sin necesidad de configurar servidores, puertos ni bases de datos manualmente. Con una interfaz intuitiva y soporte para despliegue continuo desde GitHub, es ideal para proyectos personales y prototipos rápidos.
 
 ---
 
@@ -32,12 +48,11 @@ Una vez subidos los cambios, podrás acceder al repositorio directamente desde l
 
 💡 **Recuerda:** Una vez tengas el archivo `ci-cd.yml` en la ruta `.github/workflows/`, GitHub Actions comenzará a ejecutar automáticamente los workflows definidos según los eventos configurados (como push o pull request).
 
+---
 
 ## 🚀 Despliegue en Railway
 
 Utilizando **[Railway](https://railway.app/)**, podremos realizar el despliegue de forma sencilla, sin complicaciones ni configuraciones innecesarias.
-
----
 
 ### 🪜 Paso a paso:
 
@@ -64,5 +79,4 @@ Una vez generado el dominio, podrás acceder al aplicativo y **visualizar el con
 
 ---
 
-✅ ¡Y listo! Tu aplicación está en la nube con Railway.
 
