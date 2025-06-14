@@ -67,7 +67,7 @@ def scrape_and_store():
         driver.quit()
 
     # Puedes dejar esto para debug local, pero en producción es mejor no imprimir
-    print(f"✅ Se han almacenado {contador} productos correctamente.")
+    print(f"✅ Se han almacenadooo {contador} productos correctamente.")
 
 if __name__ == "__main__":
     scrape_and_store()
